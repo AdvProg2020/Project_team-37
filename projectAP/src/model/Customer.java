@@ -28,7 +28,7 @@ public class Customer extends Person {
     public int getCredit() {
         return credit;
     }
-   
+
 
 
 }

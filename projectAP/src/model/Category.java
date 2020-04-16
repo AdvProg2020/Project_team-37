@@ -34,5 +34,9 @@ public class Category {
         allGoods.remove(goods);
     }
 
+    public void addToSuperMarket(){
+
+    }
+
 
 }
