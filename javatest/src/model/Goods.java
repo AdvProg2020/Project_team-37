@@ -16,6 +16,7 @@ public class Goods {
     private String explanation;
     private int averageRate;
     private List<Comment> comments;
+    private List<Rate> rates;
 
     public Goods(String goodsId, String name, String companyName, int price, Category category, SpecialFeature specialFeature, String explanation) {
         this.goodsId = goodsId;
@@ -27,6 +28,7 @@ public class Goods {
         this.specialFeature = specialFeature;
         this.explanation = explanation;
         this.comments=new ArrayList<>();
+        rates=new ArrayList<>();
     }
 
     public String getGoodsId() {
@@ -53,8 +55,15 @@ public class Goods {
         return sellers;
     }
 
-    public boolean isAvailable() {
-        return isAvailable;
+    public boolean isAvailable(Goods goods) {
+        if(DataBase.getDataBase().getGoodsWithCount().keySet().contains(goods)){
+            if(DataBase.getDataBase().getGoodsWithCount().containsValue(0))
+                return false;
+            else
+                return true;
+        }
+        return false;
+
     }
 
     public Category getCategory() {
@@ -70,6 +79,11 @@ public class Goods {
     }
 
     public int getAverageRate() {
+        int sumRates=0;
+        for (Rate rate : rates) {
+             sumRates=rate.getRate()+sumRates;
+        }
+        averageRate=sumRates/rates.size();
         return averageRate;
     }
 
@@ -100,5 +114,8 @@ public class Goods {
     public void setComments(List<Comment> comments) {
         this.comments = comments;
     }
+
+
+
 
 }

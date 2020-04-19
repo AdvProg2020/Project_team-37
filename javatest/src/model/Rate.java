@@ -5,8 +5,7 @@ public class Rate {
     private int rate;
     private Goods goods;
 
-    public Rate(Customer customer, int rate, Goods goods) {
-        this.customer = customer;
+    public Rate( int rate, Goods goods) {
         this.rate = rate;
         this.goods = goods;
     }

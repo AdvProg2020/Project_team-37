@@ -6,8 +6,7 @@ public class Comment {
     private CommentStatus commentStatus;
     private boolean hasThisCustomerBoughtThisGood;
 
-    public Comment(Customer customer, String commentText, boolean hasThisCustomerBoughtThisGood) {
-        this.customer = customer;
+    public Comment(String commentText, boolean hasThisCustomerBoughtThisGood) {
         this.commentText = commentText;
         this.hasThisCustomerBoughtThisGood = hasThisCustomerBoughtThisGood;
         commentStatus=CommentStatus.waitingToConfirm;

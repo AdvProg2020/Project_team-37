@@ -10,7 +10,6 @@ public class User {
     protected String passWord;
     protected String telephoneNumber;
     protected Scanner scanner;
-
     public User(String userName, String name, String lastName, String emailAddress, String passWord, String telephoneNumber) {
         this.userName = userName;
         this.name = name;

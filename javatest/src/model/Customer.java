@@ -13,9 +13,6 @@ public class Customer extends User{
         this.shoppingHistory=new ArrayList<>();
         shoppingCart=new ShoppingCart();
     }
-    public void addToDataBase(Customer customer){
-        DataBase.getDataBase().getAllCustomers().add(customer);
-    }
     public void showAllGoods(){
         DataBase.getDataBase().getAllGoods();
     }
@@ -67,5 +64,12 @@ public class Customer extends User{
     }
     public void compareTwoGoods(Goods good1,Goods good2){
         //waiting to write
+    }
+    public void addComment(Goods goods,String commentText,boolean hasBought){
+        Comment comment=new Comment(commentText,hasBought);
+        goods.getComments().add(comment);
+    }
+    public void addRate(int rate,Goods goods){
+        Rate rate1=new Rate(rate,goods);
     }
 }

@@ -12,6 +12,7 @@ public class DataBase {
    private List<Comment> allComments;
    private List<Discount> allDiscounts;
    private List<Goods> allGoods;
+   private Map<Goods,Integer> goodsWithCount;
    private List<Manager> allManagers;
    private List<Rate> allRates;
    private List<Sale> allSales;
@@ -35,6 +36,7 @@ public class DataBase {
         this.allShoppingLogs = new HashMap<>();
         this.allUsers = new ArrayList<>();
         this.allRequests=new ArrayList<>();
+        this.goodsWithCount=new HashMap<>();
     }
 
     public static DataBase getDataBase() {
@@ -91,5 +93,9 @@ public class DataBase {
 
     public List<Request> getAllRequests() {
         return allRequests;
+    }
+
+    public Map<Goods, Integer> getGoodsWithCount() {
+        return goodsWithCount;
     }
 }
