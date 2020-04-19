@@ -19,6 +19,7 @@ public class DataBase {
    private List<SellingLog> allSellingLog;
    private Map<Customer,ShoppingLog> allShoppingLogs;
    private List<User> allUsers;
+   private List<Request> allRequests;
 
     private DataBase() {
         this.allCustomers = new ArrayList<>();
@@ -33,6 +34,7 @@ public class DataBase {
         this.allSellingLog = new ArrayList<>();
         this.allShoppingLogs = new HashMap<>();
         this.allUsers = new ArrayList<>();
+        this.allRequests=new ArrayList<>();
     }
 
     public static DataBase getDataBase() {
@@ -87,4 +89,7 @@ public class DataBase {
         return allUsers;
     }
 
+    public List<Request> getAllRequests() {
+        return allRequests;
+    }
 }

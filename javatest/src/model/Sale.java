@@ -12,10 +12,10 @@ public class Sale {
     private DateTimeAtCompleted endDate;
     private int discountAmount;
 
-    public Sale(String saleId, List<Goods> goodsWithSales, SaleStatus saleStatus, DateTimeAtCreation startDate, DateTimeAtCompleted endDate, int discountAmount) {
+    public Sale(String saleId, List<Goods> goodsWithSales, DateTimeAtCreation startDate, DateTimeAtCompleted endDate, int discountAmount) {
         this.saleId = saleId;
         this.goodsWithSales = goodsWithSales;
-        this.saleStatus = saleStatus;
+        this.saleStatus =SaleStatus.waitingToConfirmed;
         this.startDate = startDate;
         this.endDate = endDate;
         this.discountAmount = discountAmount;
