@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CD5C5C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginGui">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="100.0" prefHeight="200.0" prefWidth="255.0" style="-fx-background-color: #FFA07A;">
+         <children>
+            <TextField layoutX="17.0" layoutY="25.0" prefHeight="25.0" prefWidth="224.0" promptText="email" />
+            <TextField layoutX="17.0" layoutY="62.0" prefHeight="25.0" prefWidth="224.0" promptText="password" />
+            <Button layoutX="50.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" text="logn" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="281.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" wrappingWidth="73.65869140625">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="back" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <SplitMenuButton layoutX="368.0" layoutY="100.0" mnemonicParsing="false" text="sign up as :">
+        <items>
+          <MenuItem mnemonicParsing="false" text="admin" />
+          <MenuItem mnemonicParsing="false" text="seller" />
+            <MenuItem mnemonicParsing="false" text="costumer" />
+        </items>
+         <font>
+            <Font size="26.0" />
+         </font>
+      </SplitMenuButton>
+      <Button layoutX="368.0" layoutY="234.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="218.0" text="sign up" />
+   </children>
+</AnchorPane>

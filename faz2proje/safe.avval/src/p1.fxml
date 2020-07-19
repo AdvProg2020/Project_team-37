@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="P1">
+   <children>
+      <SplitPane dividerPositions="0.26170212765957446" orientation="VERTICAL" prefHeight="472.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="22.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KHIAR-KALA.COM" textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="69.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="344.0" fitWidth="598.0" opacity="0.45" pickOnBounds="true">
+                     <image>
+                        <Image url="@../harshal-s-hirve-2GiRcLP_jkI-unsplash.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="79.0" layoutY="290.0" mnemonicParsing="false" text="حراج ها">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button layoutX="274.0" layoutY="290.0" mnemonicParsing="false" text="محصولات">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button layoutX="409.0" layoutY="290.0" mnemonicParsing="false" text="ورود به صفحه کاربری">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <ImageView fitHeight="150.0" fitWidth="181.0" layoutX="43.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../sale.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="181.0" layoutX="224.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../netclipart.com-shopping-carts-clipart-609613.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="158.0" layoutX="424.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../kisspng-computer-icons-user-clip-art-consignee-5b2d2510d5ef84.7577508315296852648763.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
