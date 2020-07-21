@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MobileGui">
+   <children>
+      <ImageView fitHeight="506.0" fitWidth="800.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../dmitry-osipenko-KlwMW3fjK_E-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="26.0" layoutY="14.0" mnemonicParsing="false" text="back" />
+      <Button layoutX="93.0" layoutY="14.0" mnemonicParsing="false" text="hesab karbari" />
+      <HBox layoutX="26.0" layoutY="72.0" prefHeight="200.0" prefWidth="734.0">
+         <children>
+            <ImageView fitHeight="205.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="203.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="204.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="209.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mobile4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <SplitMenuButton layoutX="26.0" layoutY="41.0" mnemonicParsing="false" text="sort">
+        <items>
+          <MenuItem mnemonicParsing="false" text="gheymat zyad be kam" />
+          <MenuItem mnemonicParsing="false" text="gheymat kam be zyad" />
+            <MenuItem mnemonicParsing="false" text="jadid tarin" />
+            <MenuItem mnemonicParsing="false" text="ghadimi tarin" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="637.0" layoutY="14.0" mnemonicParsing="false" text="brand">
+        <items>
+          <MenuItem mnemonicParsing="false" text="xiaommi" />
+          <MenuItem mnemonicParsing="false" text="samsunng" />
+            <MenuItem mnemonicParsing="false" text="gygaset" />
+            <MenuItem mnemonicParsing="false" text="honor" />
+            <MenuItem mnemonicParsing="false" text="asus" />
+            <MenuItem mnemonicParsing="false" text="nokia" />
+            <MenuItem mnemonicParsing="false" text="orod" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="550.0" layoutY="14.0" mnemonicParsing="false" text="gheymat">
+        <items>
+          <MenuItem mnemonicParsing="false" text="1m-2m" />
+          <MenuItem mnemonicParsing="false" text="2m-3m" />
+            <MenuItem mnemonicParsing="false" text="3m-4m" />
+        </items>
+      </SplitMenuButton>
+      <Button layoutX="509.0" layoutY="14.0" mnemonicParsing="false" text="filter" />
+      <SplitMenuButton layoutX="709.0" layoutY="14.0" mnemonicParsing="false" text="rang">
+        <items>
+          <MenuItem mnemonicParsing="false" text="meshki" />
+          <MenuItem mnemonicParsing="false" text="sefid" />
+            <MenuItem mnemonicParsing="false" text="abi" />
+        </items>
+      </SplitMenuButton>
+      <HBox layoutX="26.0" layoutY="286.0" prefHeight="212.0" prefWidth="749.0">
+         <children>
+            <ImageView fitHeight="214.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mobile5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="217.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mobile6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="213.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mobile7.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="213.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mobile8.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
