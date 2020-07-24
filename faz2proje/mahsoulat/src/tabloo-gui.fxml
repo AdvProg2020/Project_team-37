@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TablooGui">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../dmitry-osipenko-KlwMW3fjK_E-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="back" />
+      <Button layoutX="65.0" layoutY="14.0" mnemonicParsing="false" text="hesab karbari" />
+      <HBox layoutX="36.0" layoutY="140.0" prefHeight="217.0" prefWidth="727.0">
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../tablo1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="232.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../tablo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="216.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../tablo3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="219.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../tablo4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <SplitMenuButton layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="sort">
+        <items>
+          <MenuItem mnemonicParsing="false" text="gheymat zyad be kam" />
+          <MenuItem mnemonicParsing="false" text="gheymat kam be zyad" />
+            <MenuItem mnemonicParsing="false" text="jadid tarin" />
+            <MenuItem mnemonicParsing="false" text="ghadimi tarin" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="423.0" layoutY="14.0" mnemonicParsing="false" text="gheymat">
+        <items>
+          <MenuItem mnemonicParsing="false" text="1-2" />
+          <MenuItem mnemonicParsing="false" text="2-3" />
+        </items>
+      </SplitMenuButton>
+      <Button layoutX="372.0" layoutY="14.0" mnemonicParsing="false" text="fillter" />
+   </children>
+</AnchorPane>

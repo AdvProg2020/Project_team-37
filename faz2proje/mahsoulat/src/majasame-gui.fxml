@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MajasameGui">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../dmitry-osipenko-KlwMW3fjK_E-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="back" />
+      <Button layoutX="68.0" layoutY="14.0" mnemonicParsing="false" text="hesab karbari" />
+      <HBox layoutX="14.0" layoutY="155.0" prefHeight="238.0" prefWidth="780.0">
+         <children>
+            <ImageView fitHeight="238.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mogasame1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="238.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mogasame2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="236.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mogasame3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="237.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../mogasame4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <SplitMenuButton layoutX="432.0" layoutY="14.0" mnemonicParsing="false" text="gheymat">
+        <items>
+          <MenuItem mnemonicParsing="false" text="1-2" />
+          <MenuItem mnemonicParsing="false" text="2-3" />
+        </items>
+      </SplitMenuButton>
+      <Button layoutX="373.0" layoutY="14.0" mnemonicParsing="false" text="filter" />
+   </children>
+</AnchorPane>
